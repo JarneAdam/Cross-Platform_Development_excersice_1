@@ -1,18 +1,14 @@
 /**
  * Vorm onderstaande 'praise' om tot een arrow function van één lijn.
  */
-var praise = function() {
-  console.log("🙌");
-};
+const praise = () => console.log("🙌")
 
 praise();
 
 /**
  * Vorm 'convertIntoMilliseconds' om tot een arrow function van één lijn.
  */
-var convertIntoMilliseconds = function(seconds) {
-  return seconds * 1000;
-};
+const convertIntoMilliseconds = (seconds) => seconds * 1000
 
 console.log(convertIntoMilliseconds(5));
 
@@ -25,5 +21,7 @@ console.log(convertIntoMilliseconds(5));
  *  student: true
  * }
  */
+
+const setNameIds = (id, name, isStudent = true) => ({ id: id, name: name, student: isStudent })
 
 console.log(setNameIds(4, "Thomas"));
