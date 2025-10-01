@@ -10,7 +10,7 @@ const profile = {
 };
 
 // verander volgende twee lijnen naar één lijn
-const { social: { twitter, linkedin } } = profile
+const { social: { twitter, linkedin } } = profile;
 
 console.log(twitter, linkedin);
 
@@ -33,6 +33,6 @@ function getAverageTemp() {
     min: (minToday + minTomorrow) / 2,
     unit: weather.unit
   }
-}
+};
 
 console.log(getAverageTemp());
