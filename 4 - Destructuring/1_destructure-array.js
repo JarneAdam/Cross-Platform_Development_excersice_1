@@ -4,7 +4,6 @@
 const values = [1, 2, 3, 4];
 
 // wijzig de volgende twee lijnen
-const first = values[0];
-const third = values[2];
+const [first, , third] = values
 
 console.log(first, third);
