@@ -11,7 +11,7 @@ var postImage = "https://www.vives.be/sites/default/files/styles/full_small/publ
 
 var html = `
   <article class="foundry--article">
-  <a href="https://www.vives.be/nl/studeren/verder-studeren-na-je-studies" title="Verder studeren na je studies?" class="foundry--thumb-link">
+  <a href=postUrl title="Verder studeren na je studies?" class="foundry--thumb-link">
     <img class="foundry--thumb" src="https://www.vives.be/sites/default/files/styles/full_small/public/uploads/images/20200708_003.jpg?itok=GNxYfcMQ">
   </a>
   <header class="foundry--header">
