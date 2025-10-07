@@ -5,8 +5,10 @@ class Person {
   constructor(firstname, lastname) {
     this.fname = firstname;
     this.lname = lastname;
+  }
 
-    this.fullName = this.fname + ' ' + this.lname;
+  get fullName() {
+    return this.fname + ' ' + this.lname;
   }
 }
 
