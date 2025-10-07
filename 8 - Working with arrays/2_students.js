@@ -550,3 +550,17 @@ let students = [
     gebdate: "18/02/1988"
   }
 ];
+
+console.log("=== Studenten van A-klas ===");
+students
+  .filter(student => student.class === "A")
+  .map(student => ({
+    ...student,
+    score: student.score === null ? 'NA' : student.score
+  }))
+  .forEach(student => {
+    console.log(`${student.firstname} ${student.lastname} - Score: ${student.score}`);
+  });
+
+console.log("\n=== Zijn er B-klas studenten met score 20? ===");
+console.log(students.filter(student => student.class === "B").some(student => student.score === 20));
